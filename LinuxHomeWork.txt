@@ -1,0 +1,8 @@
+#!/bin/bash
+USER_NAME=$(whoami)
+echo "your name is: $USER_NAME"
+WORKING_DIRECTORY=$(pwd)
+echo "your working directory is: $WORKING_DIRECTORY"
+NUMBER_OF_SSH_PROCESSES=$(ps -e | grep ssh | wc -l)
+echo "Number of users: $NUMBER_OF_SSH_PROCESSES"
+echo "done"
